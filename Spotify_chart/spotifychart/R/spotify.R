@@ -109,3 +109,11 @@ access_token
 }
 
 
+dt<-function(d) {DT::datatable(d, 
+                           filter = "top",                         
+                           extensions = c('Buttons'), options = list(
+                             dom = 'Blfrtip',
+                             buttons = c('copy', 'csv', 'excel'), colReorder = TRUE
+                           ))}
+
+
